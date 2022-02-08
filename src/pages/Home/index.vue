@@ -19,27 +19,16 @@ import Rank from './Rank';
 import Like from './Like';
 import Floor from './Floor';
 import Brand from './Brand';
+import { mapState } from 'vuex';
+
 export default {
   name: '',
   components: {
     ListContainer, Recommend, Rank, Like, Floor, Brand
   },
-
-  data () {
-    return {
-
-    };
+  computed: {
   },
-
-  mounted () {
-
-  },
-
   methods: {
-
-  },
+  }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
