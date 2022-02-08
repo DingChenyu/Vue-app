@@ -6,7 +6,7 @@
         <div class="loginList">
           <p>尚品汇欢迎您！</p>
           <!-- 没有用户名：未登录 -->
-          <p v-if="!userName">
+          <p v-if="true">
             <span>请</span>
             <!-- 声明式导航：router-link务必要有to属性 -->
             <router-link to="/login">登录</router-link>
@@ -15,7 +15,7 @@
           </p>
           <!-- 登录了 -->
           <p v-else>
-            <a>{{userName}}</a>
+            <!-- <a>{{userName}}</a> -->
             <a class="register"
                @click="logout">退出登录</a>
           </p>
@@ -62,11 +62,12 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: '',
 
   data () {
     return {
-
+      //响应式数据，用于收集表单元素文本内容
+      keyword: "",
     };
   },
 
@@ -75,7 +76,9 @@ export default {
   },
 
   methods: {
-
+    goSearch () {
+      this.$router.push( { name: 'search', params: { keyword: this.keyword }, query: { k: this.keyword.toUpperCase() } } )
+    }
   },
 };
 </script>

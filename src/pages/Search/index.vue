@@ -1,12 +1,14 @@
 <template>
   <div>
     Search
+    params:{{$route.params.keyword}}
+    query:{{$route.query.k}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Search',
+  name: '',
 
   data () {
     return {
