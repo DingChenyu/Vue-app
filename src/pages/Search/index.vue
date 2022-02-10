@@ -1,8 +1,6 @@
 <template>
   <div>
-    Search
-    params:{{$route.params}}
-    query:{{$route.query}}
+    <TypeNav></TypeNav>
   </div>
 </template>
 
@@ -26,5 +24,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 </style>
