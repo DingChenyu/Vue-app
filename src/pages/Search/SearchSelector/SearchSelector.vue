@@ -54,9 +54,10 @@ export default {
       //为什么那,因为父组件中searchParams参数是带给服务器参数，子组件组件把你点击的品牌的信息，需要给父组件传递过去---自定义事件
       this.$emit( 'trademarkInfo', trademark );
     },
-    //平台售卖属性值的点击事件
+    // 平台售卖属性值的点击事件
     attrInfo ( attr, attrValue ) {
       //["属性ID:属性值:属性名"]
+      console.log( attr, attrValue );
       this.$emit( "attrInfo", attr, attrValue );
     }
   },

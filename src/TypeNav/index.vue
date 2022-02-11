@@ -79,7 +79,6 @@ export default {
       //修改当前currentIndex索引值
       //函数节流:在20MS时间之内只能执行一次
       this.currentIndex = index;
-      console.log( index );
     }, 20 ),
     goSearch ( event ) {
       let element = event.target;
