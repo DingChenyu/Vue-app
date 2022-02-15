@@ -9,7 +9,7 @@ import Detail from "@/pages/Detail";
 export default [
   {
     path: "/",
-    component: () => import("@/pages/Home"),
+    redirect: "/home",
   },
   {
     path: "/home",

@@ -19,3 +19,11 @@ export const reqgetSearchInfo = (params) =>
 
 // 商品详情数据
 export const reqgetGoodsInfo = (skuId) => requests.get(`/item/${skuId}`);
+
+// 获取验证码
+export const reqgetCode = (phone) =>
+  requests({ url: `/user/passport/sendCode/${phone}`, method: "get" });
+
+// 注册
+export const reqUserRegister = (data) =>
+  requests({ url: "/user/passport/register", data, method: "post" });
